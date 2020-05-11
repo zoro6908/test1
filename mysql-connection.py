@@ -29,9 +29,9 @@ mycursor=mydb.cursor()
 # mycursor.executemany(sqlform,emps)
 # mydb.commit()
 # 테이블에 입력된 데이터 출력1
-# mycursor.execute('select id,name,sal from emp')
-# for data in mycursor:
-#     print(data)
+mycursor.execute('select id,name,sal from emp')
+for data in mycursor:
+    print(data)
 # 테이블에 입력된 데이터 출력2
 # mycursor.execute('select id,name,sal from emp')
 # myresult=mycursor.fetchone()
@@ -47,6 +47,6 @@ mycursor=mydb.cursor()
 # mycursor.execute(sqlform)
 # mydb.commit()
 # 데이블 데이터 삭제
-sqlform="delete from emp where name='kim'"
-mycursor.execute(sqlform)
-mydb.commit()
+# sqlform="delete from emp where name='kim'"
+# mycursor.execute(sqlform)
+# mydb.commit()
